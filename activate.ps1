@@ -1,4 +1,4 @@
-<#
+﻿<#
 .SYNOPSIS
     WinRAR License Activator
 .DESCRIPTION
@@ -58,17 +58,18 @@ foreach ($dir in ($programDirs | Select-Object -Unique)) {
         $progKey = Join-Path $dir "rarreg.key"
         try {
             [System.IO.File]::WriteAllText($progKey, $keyData, [System.Text.Encoding]::ASCII)
-            Write-Host "[+] Da cai dat key tai thu muc cai dat: $progKey" -ForegroundColor Green
+            Write-Host "[+] Da cai dat key vao thu muc he thong: $progKey" -ForegroundColor Green
             $success = $true
         } catch {
-            Write-Host "[*] Khong ghi duoc vao $dir (can Run as Administrator de ap dung toan he thong)" -ForegroundColor Yellow
+            # Bỏ qua nếu không có quyền Admin, vì AppData đã kích hoạt thành công cho user
         }
     }
 }
 
 if ($success) {
-    Write-Host "`n[✓] Kich hoat WinRAR hoan tat thanh cong!" -ForegroundColor Cyan
-    Write-Host "    Hay mo WinRAR -> Help -> About WinRAR de kiem tra ban quyen." -ForegroundColor White
+    Write-Host "`n[✓] Kich hoat WinRAR hoan tat thanh cong!" -ForegroundColor Green
+    Write-Host "    WinRAR da duoc dang ky ban quyen (Unlimited Company License)." -ForegroundColor Cyan
+    Write-Host "    Ban hay mo WinRAR -> Help -> About WinRAR de kiem tra nhe!" -ForegroundColor White
 } else {
     Write-Host "`n[X] Co loi xay ra trong qua trinh cai dat key." -ForegroundColor Red
 }
