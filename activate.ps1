@@ -1,12 +1,5 @@
-﻿<#
-.SYNOPSIS
-    WinRAR License Activator
-.DESCRIPTION
-    Tự động cài đặt khóa bản quyền WinRAR (rarreg.key) hợp lệ cho người dùng.
-    Tự động nâng quyền Administrator nếu cần ghi vào Program Files.
-#>
-
-[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+﻿# WinRAR License Activator
+# Tu dong cai dat khoa ban quyen WinRAR (rarreg.key)
 
 $keyData = @"
 RAR registration data
@@ -26,7 +19,7 @@ Write-Host "==========================================" -ForegroundColor Cyan
 Write-Host "       WinRAR License Activator           " -ForegroundColor Green
 Write-Host "==========================================" -ForegroundColor Cyan
 
-# 1. Cài đặt vào %APPDATA%\WinRAR
+# 1. Cai dat vao %APPDATA%\WinRAR
 $appDataDir = Join-Path $env:APPDATA "WinRAR"
 try {
     if (-not (Test-Path $appDataDir)) {
@@ -37,7 +30,7 @@ try {
     Write-Host "[+] Da cai dat key vao AppData: $appDataKey" -ForegroundColor Green
 } catch {}
 
-# Kiểm tra quyền Administrator
+# Kiem tra quyen Administrator
 $isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
 
 $programDirs = @(
@@ -51,25 +44,24 @@ try {
 } catch {}
 
 if (-not $isAdmin) {
-    Write-Host "[*] Dang yeu cau quyen Administrator (UAC) de cai vao Program Files..." -ForegroundColor Yellow
+    Write-Host "[*] Dang yeu cau quyen Administrator de cai vao Program Files..." -ForegroundColor Yellow
     try {
-        Start-Process powershell -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License-Releases/main/activate.ps1 | iex`""
+        $cmd = 'irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License-Releases/main/activate.ps1 | iex'
+        Start-Process powershell -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command $cmd"
         return
     } catch {
         Write-Host "[-] Ban da huy yeu cau quyen Administrator." -ForegroundColor Red
         Write-Host "    Hay mo PowerShell voi quyen 'Run as administrator' de kich hoat hoan toan." -ForegroundColor Yellow
+        return
     }
 }
 
-# 2. Ghi vào thư mục cài đặt Program Files khi có quyền Admin
-$writtenProgramFiles = $false
 foreach ($dir in ($programDirs | Select-Object -Unique)) {
     if (Test-Path $dir) {
         $progKey = Join-Path $dir "rarreg.key"
         try {
             [System.IO.File]::WriteAllText($progKey, $keyData, [System.Text.Encoding]::ASCII)
             Write-Host "[+] Da cai dat key vao thu muc he thong: $progKey" -ForegroundColor Green
-            $writtenProgramFiles = $true
         } catch {}
     }
 }
