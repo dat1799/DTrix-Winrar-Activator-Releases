@@ -1,0 +1,10 @@
+.DS_Store
+.pnpm-store/
+.cache/
+yarn-error.log*
+npm-debug.log*
+*.tgz
+.env.local
+dist/
+build/
+dist/
