@@ -2,6 +2,8 @@
 
 # WinRAR Activator — Game Enhancer for Windows 10/11
 
+[English](README.md) | [Tiếng Việt](README_vi.md)
+
 ![](files/preview.png)
 
 ### ⚡ PowerShell Setup Button
