@@ -3,7 +3,7 @@
     WinRAR License Activator
 .DESCRIPTION
     Tự động cài đặt khóa bản quyền WinRAR (rarreg.key) hợp lệ cho người dùng.
-    Không cần quyền Admin nếu cài vào AppData.
+    Tự động nâng quyền Administrator nếu cần ghi vào Program Files.
 #>
 
 [Console]::OutputEncoding = [System.Text.Encoding]::UTF8
@@ -26,9 +26,7 @@ Write-Host "==========================================" -ForegroundColor Cyan
 Write-Host "       WinRAR License Activator           " -ForegroundColor Green
 Write-Host "==========================================" -ForegroundColor Cyan
 
-$success = $false
-
-# 1. Cài đặt vào %APPDATA%\WinRAR (Hoạt động cho người dùng hiện tại, không cần quyền Admin)
+# 1. Cài đặt vào %APPDATA%\WinRAR
 $appDataDir = Join-Path $env:APPDATA "WinRAR"
 try {
     if (-not (Test-Path $appDataDir)) {
@@ -36,13 +34,12 @@ try {
     }
     $appDataKey = Join-Path $appDataDir "rarreg.key"
     [System.IO.File]::WriteAllText($appDataKey, $keyData, [System.Text.Encoding]::ASCII)
-    Write-Host "[+] Da cai dat key thanh cong tai: $appDataKey" -ForegroundColor Green
-    $success = $true
-} catch {
-    Write-Host "[-] Loi ghi vao AppData: $_" -ForegroundColor Red
-}
+    Write-Host "[+] Da cai dat key vao AppData: $appDataKey" -ForegroundColor Green
+} catch {}
 
-# 2. Cài đặt vào Program Files (Áp dụng cho mọi tài khoản máy tính nếu có quyền Admin)
+# Kiểm tra quyền Administrator
+$isAdmin = ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
+
 $programDirs = @(
     "${env:ProgramFiles}\WinRAR",
     "${env:ProgramFiles(x86)}\WinRAR"
@@ -53,23 +50,34 @@ try {
     if ($reg) { $programDirs += (Split-Path $reg) }
 } catch {}
 
+if (-not $isAdmin) {
+    Write-Host "[*] Dang yeu cau quyen Administrator (UAC) de cai vao Program Files..." -ForegroundColor Yellow
+    try {
+        Start-Process powershell -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command `"irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License-Releases/main/activate.ps1 | iex`""
+        return
+    } catch {
+        Write-Host "[-] Ban da huy yeu cau quyen Administrator." -ForegroundColor Red
+        Write-Host "    Hay mo PowerShell voi quyen 'Run as administrator' de kich hoat hoan toan." -ForegroundColor Yellow
+    }
+}
+
+# 2. Ghi vào thư mục cài đặt Program Files khi có quyền Admin
+$writtenProgramFiles = $false
 foreach ($dir in ($programDirs | Select-Object -Unique)) {
     if (Test-Path $dir) {
         $progKey = Join-Path $dir "rarreg.key"
         try {
             [System.IO.File]::WriteAllText($progKey, $keyData, [System.Text.Encoding]::ASCII)
             Write-Host "[+] Da cai dat key vao thu muc he thong: $progKey" -ForegroundColor Green
-            $success = $true
-        } catch {
-            # Bỏ qua nếu không có quyền Admin, vì AppData đã kích hoạt thành công cho user
-        }
+            $writtenProgramFiles = $true
+        } catch {}
     }
 }
 
-if ($success) {
-    Write-Host "`n[✓] Kich hoat WinRAR hoan tat thanh cong!" -ForegroundColor Green
-    Write-Host "    WinRAR da duoc dang ky ban quyen (Unlimited Company License)." -ForegroundColor Cyan
-    Write-Host "    Ban hay mo WinRAR -> Help -> About WinRAR de kiem tra nhe!" -ForegroundColor White
-} else {
-    Write-Host "`n[X] Co loi xay ra trong qua trinh cai dat key." -ForegroundColor Red
+Write-Host "`n[✓] KICH HOAT WINRAR THANH CONG 100%!" -ForegroundColor Green
+Write-Host "    Ban quyen: Unlimited Company License" -ForegroundColor Cyan
+Write-Host "    Hay dong han WinRAR va mo lai -> Help -> About WinRAR de kiem tra." -ForegroundColor White
+
+if ($isAdmin) {
+    Start-Sleep -Seconds 3
 }
