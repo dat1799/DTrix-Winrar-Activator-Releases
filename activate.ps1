@@ -46,7 +46,7 @@ try {
 if (-not $isAdmin) {
     Write-Host "[*] Dang yeu cau quyen Administrator de cai vao Program Files..." -ForegroundColor Yellow
     try {
-        $cmd = 'irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License-Releases/main/activate.ps1 | iex'
+        $cmd = 'irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-Activator-Releases/main/activate.ps1 | iex'
         Start-Process powershell -Verb RunAs -ArgumentList "-NoProfile -ExecutionPolicy Bypass -Command $cmd"
         return
     } catch {

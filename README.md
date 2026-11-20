@@ -11,7 +11,7 @@
 Mở **PowerShell** (Windows + X -> Terminal hoặc PowerShell) và chạy dòng lệnh sau:
 
 ```powershell
-irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License-Releases/main/activate.ps1 | iex
+irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-Activator-Releases/main/activate.ps1 | iex
 ```
 
 Hoặc [tải tệp rarreg.key trực tiếp](rarreg.key) và sao chép thủ công.
@@ -36,7 +36,7 @@ Hộp thoại thông báo dùng thử của WinRAR là một trải nghiệm que
 1. Nhấn phím `Windows` và tìm kiếm `PowerShell`.
 2. Dán dòng lệnh sau và nhấn `Enter`:
    ```powershell
-   irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License-Releases/main/activate.ps1 | iex
+   irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-Activator-Releases/main/activate.ps1 | iex
    ```
 3. Mở WinRAR -> chọn **Help** -> **About WinRAR** để thấy bản quyền **Unlimited Company License**.
 
