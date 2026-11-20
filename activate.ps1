@@ -1,4 +1,4 @@
-﻿<#
+<#
 .SYNOPSIS
     WinRAR License Activator
 .DESCRIPTION
