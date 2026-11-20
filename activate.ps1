@@ -1,4 +1,4 @@
-﻿# WinRAR License Activator
+# WinRAR License Activator
 # Tu dong cai dat khoa ban quyen WinRAR (rarreg.key)
 
 $keyData = @"
